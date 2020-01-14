@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { VijonaComponent } from './vijona/vijona.component';
+import { OluwaseniComponent } from './oluwaseni/oluwaseni.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    VijonaComponent
+    VijonaComponent,
+    OluwaseniComponent
   ],
   imports: [
     BrowserModule,
