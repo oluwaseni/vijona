@@ -7,7 +7,8 @@ import { PiersonComponent } from './pierson/pierson.component';
 
 
 const routes: Routes = [
-  {path:'', component:OluwaseniComponent},
+  {path:'', redirectTo: 'oluwaseni', pathMatch:'full'},
+  // {path:'', component:OluwaseniComponent},
   {path:'vijona', component:VijonaComponent},
   {path:'oluwaseni', component:OluwaseniComponent},
   {path:'pierson', component:PiersonComponent},
