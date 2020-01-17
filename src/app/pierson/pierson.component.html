@@ -1,0 +1,74 @@
+<div style="width: 90%; height: 600px; margin-top: 5%; 
+margin-left: 5% !important; background-color: #92b8c2;
+background-image: url(../../assets/fit.jpg); background-repeat: no-repeat; 
+background-attachment: fixed;
+background-size: 30%;
+background-position: right;
+"
+  class="pierson">
+
+  <div class="nav" style="padding: 2% !important; font-size: 75%;">
+    <div class="left">
+      <span style="font-size: 200%; font-weight: bold; color: #4d4df0;">hUb</span>
+      <span style="margin-left: 15px;">Find jobs</span>
+      <span style="margin-left: 15px;">Browse Startups</span>
+    </div>
+
+    <div class="right" style="position: absolute; right: 10% !important;">
+      <span style="margin-right: 15px;">For Startups</span> |
+      <span style="margin-left: 10px;">Sign In</span>
+    </div>
+  </div>
+
+  <div class="searchDiv" style="padding: 7%; padding-top: 2%;">
+    <p class="graph">
+      Find the <br> most exciting startup jobs
+    </p>
+
+    <div class="searchbox">
+      <!-- <form class="example" action="action_page.php"> -->
+      <input type="text" [(ngModel)]='searchTerm'  placeholder="Search.." (change)="searchChanged($event)"
+        style="padding-left: 10px; background-color: #ffffff !important; border: none; width: 60% !important; height: 60px !important;">
+      <button type="submit"
+        style="height: 60px; background-color: #4d4df0; color: #ffffff; border: none; padding-left: 20px; padding-right: 20px;">
+        Search </button>
+      <!-- </form> -->
+
+      <div style="margin-top: -6% !important; margin-left: 35%;">
+        <!-- <label>Select Search Type</label> -->
+        <select [ngModel]="type" style="height: 60px !important; width: 150px;
+        border-top:none;
+        border-right:none;
+        border-bottom:none;
+        border-color: #e4e3e3;
+        padding-left: 5px;
+        color: #817f7f;
+        " (change)="searchChanged($event)">
+          <option value="">All</option>
+          <option value="movie">Movie</option>
+          <option value="series">Series</option>
+          <option value="episode">Episode</option>
+        </select>
+      </div>
+    
+
+    </div>
+    <div class="searchResponse">
+      <div style="background-color: #ffffff; padding-left: 5px;" class="list" *ngFor="let item of (results | async)" [routerLink]= "['/', 'movies', item.imdbID]">
+        <div>
+          <img [src]="item.Poster" style="height: 50px; padding-top: 0%; margin-top: -6% !important; width: 50px; margin-right: 5%;" *ngIf="item.Poster != 'N/A'">
+        
+        <label style="padding-top: 1%; margin-top: 2%; width: 60%; color: #cccccc;">
+            <h3 style="color: #000000; font-size: 70%; font-weight: bold;">{{item.Title}}</h3>
+                {{item.Year}}
+        </label>
+    </div>
+      </div>
+    </div>
+  </div>
+  <p style="padding-left: 8%; font-size: 80%;"> created by <span class="created">Oluwaseni</span> and powered by <span  class="created">H.Pierson</span></p>
+  <div class="footer">
+
+  </div>
+
+</div>
