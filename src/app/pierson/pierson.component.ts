@@ -20,7 +20,7 @@ export class PiersonComponent implements OnInit {
   }
 
   
-  searchChanged(){
+  searchChanged($event){
     this.results = this._service.searchData(this.searchTerm, this.type);
     console.log(this.searchTerm)
 
