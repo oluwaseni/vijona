@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class PiersonService {
 
-  url = 'http://www.omdbapi.com/';
+  url = 'https://www.omdbapi.com/';
   apiKey = '7f1e8d0f';
 
   constructor(private http: HttpClient) { }
