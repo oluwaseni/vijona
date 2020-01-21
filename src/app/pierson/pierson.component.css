@@ -26,10 +26,62 @@
   }
 
 
+  .selecter{
+    height: 100% !important; width: 15%;
+    border-top:none;
+    border-right:none;
+    border-bottom:none;
+    border-color: #e4e3e3;
+    padding-left: 5px;
+    color: #817f7f;
+    
+  }
+
+  .selecter-div{
+    margin-top: -5% !important; margin-left: 35%;
+  }
+
+
   .footer{
       width: 100%;
-      height: 25% !important;
+      height: 125% !important;
+      min-height: max-content !important;
       margin-top: 5%;
       bottom: 1px;
       background-color: #ffffff;
+      padding-top: 5%;
+      padding-bottom: 5%;
+  }
+
+  @media screen and (max-width: 700px) {
+
+    .selecter-div{
+        margin-top: -10% !important; margin-left: 35%;
+      }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .selecter-div{
+        margin-top: -15% !important; margin-left: 35%;
+        margin-bottom: 5%;
+      }
+
+      .selecter{
+          /* height: 30; */
+      }
+
+    
+  }
+
+  @media screen and (max-width: 300px) {
+
+    .selecter-div{
+        margin-top: -17% !important; margin-left: 35%;
+        margin-bottom: 5%;
+      }
+
+      .creats{
+          display: none;
+      }
   }
