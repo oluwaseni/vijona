@@ -11,6 +11,18 @@
     line-height: 110%;
   }
 
+
+  .pierson{
+  width: 90%; height: 100%;
+  max-height: max-content !important;
+  margin-top: 5%; 
+  margin-left: 5% !important; background-color: #92b8c2;
+  background-image: url(../../assets/fit.jpg); background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: 30%;
+  background-position: right;
+  }
+
   .searchbox{
       margin-top: 5%;
   }
@@ -58,6 +70,20 @@
     .selecter-div{
         margin-top: -10% !important; margin-left: 35%;
       }
+
+      .graph{
+        font-size: 150%;
+        /* margin-left: 8%;  */
+        /* top: 20% !important;} */
+      }
+
+      .pierson{
+
+        background-position-y: 20% !important;
+        
+      background-size: 50% !important;
+
+      }
   }
 
   @media screen and (max-width: 500px) {
@@ -69,6 +95,14 @@
 
       .selecter{
           /* height: 30; */
+      }
+
+      .pierson{
+
+        /* background-position-y: 20% !important; */
+        
+      background-size: 40% !important;
+
       }
 
     
