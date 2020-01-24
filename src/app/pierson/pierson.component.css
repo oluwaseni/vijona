@@ -61,7 +61,7 @@
       width: 100%;
       height: 25% !important;
       min-height: max-content !important;
-      margin-top: 15%;
+      margin-top: 25%;
       bottom: 0px;
       background-color: #ffffff;
       padding-top: 5%;
@@ -81,7 +81,7 @@
       .graph{
         font-size: 150%;
         /* margin-left: 8%;  */
-        /* top: 20% !important;} */
+        margin-top: 30% !important;
       }
 
       .pierson{
@@ -112,6 +112,11 @@
 
       }
 
+      .footer{
+        margin-top: 40% !important;
+
+      }
+
     
   }
 
@@ -125,4 +130,12 @@
       .creats{
           display: none;
       }
+
+      .graph{
+        font-size: 150%;
+        /* margin-left: 8%;  */
+        margin-top: 5% !important;
+      }
+
+      
   }
