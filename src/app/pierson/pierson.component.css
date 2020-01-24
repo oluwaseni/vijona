@@ -13,14 +13,16 @@
 
 
   .pierson{
-  width: 90%; min-height: 120% !important;
-  max-height: max-content !important;
+    position: absolute;
+  width: 90%; height: 100% !important;
+  max-height: min-content !important;
   margin-top: 3%; 
   margin-left: 5% !important; background-color: #92b8c2;
   background-image: url(../../assets/fit.jpg); background-repeat: no-repeat; 
   background-attachment: fixed;
   background-size: 35%;
   background-position: right;
+  overflow-x: hidden;
   }
 
   .searchbox{
@@ -55,14 +57,19 @@
 
 
   .footer{
+      position: absolute;
       width: 100%;
-      height: 125% !important;
+      height: 25% !important;
       min-height: max-content !important;
-      margin-top: 5%;
-      bottom: 1px;
+      margin-top: 15%;
+      bottom: 0px;
       background-color: #ffffff;
       padding-top: 5%;
       padding-bottom: 5%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      padding-right: 2%;
+
   }
 
   @media screen and (max-width: 700px) {
