@@ -100,16 +100,20 @@
         margin-bottom: 5%;
       }
 
-      .selecter{
-          /* height: 30; */
-      }
-
+      .searchbox{
+        margin-top: 15%;
+    }
       .pierson{
 
         /* background-position-y: 20% !important; */
         
       background-size: 70% !important;
 
+      }
+
+      .graph{
+        /* margin-top: 60%; */
+        top: 40% !important;
       }
 
       .footer{
