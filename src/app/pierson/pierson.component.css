@@ -31,6 +31,16 @@
   overflow-x: hidden;
   }
 
+  .buttonSearch{
+    height: 60px; background-color: #4d4df0; color: #ffffff; border: none;
+    padding-left: 3%; padding-right: 3%;
+  }
+
+  .inputSearch{
+    padding-left: 2%;
+         background-color: #ffffff !important; border: none; width: 50% !important; height: 60px !important;
+  }
+
   .searchbox{
       margin-top: 5%;
   }
@@ -106,8 +116,18 @@
         margin-bottom: 5%;
       }
 
+      .buttonSearch{
+        width: 25% !important;
+      }
+
+      .inputSearch{
+        width: 60% !important;
+      }
+
       .searchbox{
+        position: absolute;
         margin-top: 15%;
+        width: 100% !important;
     }
       .pierson{
 
