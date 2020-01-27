@@ -73,7 +73,7 @@
 
 
   .footer{
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 25% !important;
       min-height: max-content !important;
@@ -116,6 +116,11 @@
         margin-bottom: 5%;
       }
 
+      .searchResponse{
+        margin-top: 40% !important;
+        width: 98%;
+      }
+
       .buttonSearch{
         width: 25% !important;
       }
@@ -129,6 +134,11 @@
         margin-top: 15%;
         width: 100% !important;
     }
+
+    .creats{
+      display: none;
+  }
+
       .pierson{
 
         /* background-position-y: 20% !important; */
