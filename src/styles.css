@@ -10,6 +10,16 @@ body {
     background-repeat: no-repeat;
     margin: auto;*/
     background-color: #c5e3f7;
+    overflow: hidden;
 
     font: 400 15px/1.8 Lato, sans-serif;
   }
+
+  ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
