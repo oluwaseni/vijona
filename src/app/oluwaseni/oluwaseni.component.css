@@ -28,39 +28,66 @@
 }
 
 .next{
-    height: 40%;
+    height: max-content !important;
     width: 100%;
-    background-color: #000000;
+    background-color: #ffffff;
+    margin-left: 0;
+   
+    z-index: 20;
+    background-image: url('../../assets/service5.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.last{
+    height: 600px !important;
+    width: 100%;
+    background-color: #f7f3f3;
+    margin-left: 0;
+   
+    z-index: 20;
+    background-image: url('../../assets/unnamed(1).jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services-text{
+  width: 60%;
+  opacity: 1 !important;
 }
 
 /* The side navigation menu */
 .sidebar {
     margin: 0;
+    margin-top: -8%;
     padding: 0;
-    width: 1          00px;
-    background-color: #020202;  
+    width: 1;
+    background-color: transparent;  
     position: fixed;
     height: 100%;
     overflow: auto;
-    z-index: 300;
+    z-index: 2;
     padding-top: 20%;
+    
   }
   
   /* Sidebar links */
   .sidebar a {
     display: block;
-    color: #ffffff;
+    color: #be9011;
     padding: 16px;
     text-decoration: none;
   }
   .active {
     /* background-color: #0a0a0a; */
-    color: #be9011 !important;
+    color: #ffffff !important;
   }
   
   .nav-link:hover {
     /* background-color: #0a0a0a; */
-    color: #be9011 !important;
+    color: #ffffff !important;
   }
   
   /* Active/current link */
@@ -80,6 +107,53 @@
     margin-left: 200px;
     padding: 1px 16px;
     height: 1000px;
+  }
+
+  .after{
+    height: max-content !important;
+    width: 100%;
+    background-color: #ffffff;
+  }
+
+  .box{
+    box-shadow: 2px 2px 2px 2px #be9011;
+    margin-left: 5% !important;
+  }
+  .boxes{
+    box-shadow: 2px 2px 2px 2px #dddcda;
+    margin-left: 5% !important;
+  }
+
+  .next-inner{
+    background-color: #000000 ;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    padding: 5% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    color: #ffffff;
+  }
+
+  .after-inner{
+    background-color: #ffffff ;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    padding: 5% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    color: #000000;
+  }
+  .last-inner{
+    background-color: #dad3d3 ;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    padding: 5% !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    color: #000000;
   }
 
   .graph{
@@ -108,6 +182,25 @@
   .icons{
     margin-right: 5px !important;
   }
+
+  @media screen and (max-width: 500px) {
+
+.graph{
+  width: 80%;
+}
+.services-text{
+  width: 80% !important;
+}
+
+.lowbtn{
+  font-size: 30% !important;
+}
+
+
+.boxes{
+  font-size: 60% !important;
+}
+  }
   
   /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
   @media screen and (max-width: 400px) {
@@ -118,6 +211,13 @@
       font-size: 60%;
 
     }
+
+    
+.boxes{
+  font-size: 50% !important;
+}
+
+
 
     
   .graph{
