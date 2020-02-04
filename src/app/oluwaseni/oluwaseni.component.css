@@ -1,7 +1,7 @@
 .banner{
     background-attachment: fixed;
 
-    height: 85%;
+    height: max-content !important;
     font: 400 15px/1.8 Lato, sans-serif;
     color: #777;
     background-image: url('../../assets/seni.jpeg');
@@ -11,7 +11,8 @@
     background-position-y: -10px;
     background-repeat: no-repeat;
     margin: auto;
-    padding-top: 15%;;
+    padding-top: 13%;
+    padding-bottom: 13%;
     padding-left : 7%;;
     /* background-color: #e0c6c6; */
     /* transition: background-image 540ms ease-in; */
@@ -41,7 +42,7 @@
 }
 
 .last{
-    height: 600px !important;
+    height: max-content !important;
     width: 100%;
     background-color: #f7f3f3;
     margin-left: 0;
@@ -80,6 +81,10 @@
     padding: 16px;
     text-decoration: none;
   }
+
+  a i{
+    color: #be9011 !important;
+  }
   .active {
     /* background-color: #0a0a0a; */
     color: #ffffff !important;
@@ -113,6 +118,13 @@
     height: max-content !important;
     width: 100%;
     background-color: #ffffff;
+  }
+  .foot{
+    height: 100px !important;
+    width: 100%;
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
   }
 
   .box{
@@ -150,18 +162,25 @@
     height: 100%;
     width: 100%;
     opacity: 0.9;
-    padding: 5% !important;
-    padding-left: 10% !important;
-    padding-right: 10% !important;
+    padding: 10% !important;
     color: #000000;
   }
 
   .graph{
-    color: #ffffff; width: 25%; margin-left: 8%; top: 20% !important;
+    color: #ffffff; width: 35%; margin-left: 8%; top: 20% !important;
   }
   
   /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (min-width: 700px) {
+    
+
+  }
   @media screen and (max-width: 700px) {
+
+        
+.sub{
+  width: 100% !important;
+}
     .sidebar {
 
       position: fixed;
@@ -189,7 +208,7 @@
   width: 80%;
 }
 .services-text{
-  width: 80% !important;
+  width: 100% !important;
 }
 
 .lowbtn{
@@ -197,7 +216,9 @@
 }
 
 
-.boxes{
+
+
+.boxes, .box{
   font-size: 60% !important;
 }
   }
